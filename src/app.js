@@ -18,7 +18,7 @@ app.use(cookieParser())
 // routes
 app.use("/api/v1/auth",authRoutes)  
 app.use("/api/v1/auth",itemRoute)
-app.use("/api/v1/auth",categoryRoute)
+app.use("/api/v1/category",categoryRoute)
 
 app.get("/",(req,res)=>{
     res.send("<h1>THE SPECKLED PALET</h1>")

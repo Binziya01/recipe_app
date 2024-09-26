@@ -138,3 +138,18 @@ export const login =async(req,res)=>{
     
 
 }
+
+// Logout
+
+export const logout = (req,res) => {
+    res.clearCookie("token").json({
+        success: true,
+        message: "Logged out successfully!"
+    })
+}
+
+// Test controller
+
+export const testController = (req,res)=>{
+    res.send("protected route")
+}
